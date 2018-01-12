@@ -5,6 +5,7 @@ h1 {
 }
 
 .container {
+    line-height: 300px;
     background-color: #fec;
     text-align: center;
 }
