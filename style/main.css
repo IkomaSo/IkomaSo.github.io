@@ -22,6 +22,7 @@
 a {
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
+    font-size: 3vmin;
     color: #fff;
     padding-top: 0px;
     text-decoration: none;
@@ -33,9 +34,9 @@ a span {
     position: absolute;
     top: 2vh;
     left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
+    width: 5vmin;
+    height: 5vmin;
+    margin-left: -2.5vmin;
     border-left: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: rotateZ(-45deg);
@@ -75,6 +76,7 @@ a span {
 
 .select {
     text-align: center;
+    height: 1000px;
 }
 
 .hannnari {
