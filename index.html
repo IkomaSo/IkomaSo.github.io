@@ -16,6 +16,9 @@
     </div>
     <div id="barba-wrapper" aria-live="polite">
         <div class="barba-container">
+            <script>
+                AOS.init();
+            </script>
             <div class="select">
                 <p class="hannnari" data-aos="fade-up">Select a Difficulty Level</p>
                 <a href="https://ikomaso.github.io/select.html" class="push1" data-aos="flip-left">小納言</a>
@@ -86,7 +89,6 @@
         Barba.Pjax.getTransition = function() {
             return FadeTransition;
         };
-        AOS.init();
         Barba.Pjax.start();
     </script>
 </body>
