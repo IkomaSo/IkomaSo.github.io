@@ -20,7 +20,7 @@
         <div class="barba-container">
             <div class="select">
                 <p class="hannnari" data-aos="fade-up">Select a Difficulty Level</p>
-                <a href="https://ikomaso.github.io/select.html" class="push1" data-aos="flip-left">小納言</a>
+                <a href="https://ikomaso.github.io/index.html" class="push1" data-aos="flip-left">小納言</a>
                 <a href="#none" class="push2" data-aos="flip-right">中納言</a>
                 <a href="#none" class="push3" data-aos="flip-left">大納言</a>
                 <a href="#none" class="push4" data-aos="flip-right">御門</a>
@@ -33,6 +33,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
     <script>
         AOS.init();
+        Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container, newPageRawHTML) {
+
+            //ページ読み込み時にスクリプトを再読み込み
+            var winHeight = $(window).height();
+            var headerHeight = $('header').innerHeight();
+            var innerHeight = winHeight - headerHeight;
+            $('.inner').css("height", innerHeight + "px");
+
+            return false;
+
+        });
         //Barba.js用トランジション設定
         var FadeTransition = Barba.BaseTransition.extend({
             start: function() {
