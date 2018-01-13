@@ -19,7 +19,7 @@
     top: 45vh;
 }
 
-a {
+b {
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
     font-size: 5mm;
@@ -30,7 +30,7 @@ a {
     top: 70vh;
 }
 
-a span {
+b span {
     position: absolute;
     top: 2vh;
     left: 50%;
@@ -76,7 +76,7 @@ a span {
 
 .select {
     text-align: center;
-    height: 1000px;
+    height: 1500px;
 }
 
 .hannnari {
@@ -84,5 +84,165 @@ a span {
     font-size: 5vmin;
     font-weight: 900;
     position: relative;
-    top: 50px;
+    top: 100px;
+}
+
+a:active {
+    background: rgba(255, 255, 255, .5);
+}
+
+.push1 {
+    display: block;
+    margin: 0 10px;
+    padding: 15px 0;
+    width: 130px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: calc(50vw - 70px);
+    top: 200px;
+    transition: .2s ease-in-out;
+    text-indent: -9999em;
+}
+
+.push1:before {
+    content: "小納言";
+    padding-top: 16px;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    text-indent: 0;
+    background: #00b436;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 0 #009007;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 2;
+    transition: .2s ease-in-out;
+}
+
+.push1:hover:before {
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 #009007;
+}
+
+.push2 {
+    display: block;
+    margin: 0 10px;
+    padding: 15px 0;
+    width: 130px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: calc(50vw - 70px);
+    top: 400px;
+    transition: .2s ease-in-out;
+    text-indent: -9999em;
+}
+
+.push2:before {
+    content: "中納言";
+    padding-top: 16px;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    text-indent: 0;
+    background: #0081b4;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 0 #006790;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 2;
+    transition: .2s ease-in-out;
+}
+
+.push2:hover:before {
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 #006790;
+}
+
+.push3 {
+    display: block;
+    margin: 0 10px;
+    padding: 15px 0;
+    width: 130px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: calc(50vw - 70px);
+    top: 600px;
+    transition: .2s ease-in-out;
+    text-indent: -9999em;
+}
+
+.push3:before {
+    content: "大納言";
+    padding-top: 16px;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    text-indent: 0;
+    background: #b40023;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 0 #90001c;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 2;
+    transition: .2s ease-in-out;
+}
+
+.push3:hover:before {
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 #90001c;
+}
+
+.push4 {
+    display: block;
+    margin: 0 10px;
+    padding: 15px 0;
+    width: 130px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: calc(50vw - 70px);
+    top: 800px;
+    transition: .2s ease-in-out;
+    text-indent: -9999em;
+}
+
+.push4:before {
+    content: "御門";
+    padding-top: 16px;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    text-indent: 0;
+    background: #f6c432;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 0 #e6b422;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 2;
+    transition: .2s ease-in-out;
+}
+
+.push4:hover:before {
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 #90001c;
 }
