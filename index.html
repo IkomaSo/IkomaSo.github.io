@@ -10,21 +10,75 @@
 
 <body>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
+
     <div class="container">
         <p class="welcome">Make it possible with me.</p>
         <b href="#" class="scrl"><span></span>Scroll</b>
     </div>
-    <div class="select">
-        <p class="hannnari" data-aos="fade-up">Select a Difficulty Level</p>
-        <a href="https://google.com" class="push1" data-aos="flip-left">小納言</a>
-        <a href="#none" class="push2" data-aos="flip-right">中納言</a>
-        <a href="#none" class="push3" data-aos="flip-left">大納言</a>
-        <a href="#none" class="push4" data-aos="flip-right">御門</a>
+    <div id="barba-wrapper" aria-live="polite">
+        <div class="barba-container">
+            <div class="select">
+                <p class="hannnari" data-aos="fade-up">Select a Difficulty Level</p>
+                <a href="https://ikomaso.github.io/select.html" class="push1" data-aos="flip-left">小納言</a>
+                <a href="#none" class="push2" data-aos="flip-right">中納言</a>
+                <a href="#none" class="push3" data-aos="flip-left">大納言</a>
+                <a href="#none" class="push4" data-aos="flip-right">御門</a>
+            </div>
+        </div>
+        <!-- / .barba-container -->
     </div>
+    <!-- / #barba-wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+    <script>
+        AOS.init();
+        //Barba.js用トランジション設定
+        var FadeTransition = Barba.BaseTransition.extend({
+            start: function() {
+                //この関数は、遷移が開始されるとすぐに自動的に呼び出されます。
 
+                //読み込みが終了し、古いページがフェードアウトするとすぐに、新しいページがフェードインします。
+                Promise
+                    .all([this.newContainerLoading, this.fadeOut()])
+                    .then(this.fadeIn.bind(this));
+            },
+
+            fadeOut: function() {
+                //this.oldContainerは古いコンテナのHTMLElementです。この場合はアニメーションでフェードアウトさせている。
+                return $(this.oldContainer).animate({
+                    left: "20000px"
+                }).promise();
+            },
+
+            fadeIn: function() {
+                var _this = this;
+                //this.newContainerは、新しいコンテナのHTMLElementです。
+                //この段階では、newContainerはDOM上にあります（barba-container内にあり、visibility：hiddenで囲まれています）。
+                var $el = $(this.newContainer);
+
+                //古いコンテナをdisplay:none;にした後、新しいコンテナに初期値を設定。
+                $(this.oldContainer).hide();
+                $el.css({
+                    visibility: 'visible',
+                    opacity: 0
+                });
+
+                $el.animate({
+                    opacity: 1
+                }, 400, function() {
+                    //.done（）の記述で古いコンテナを自動的にDOMから削除。
+                    _this.done();
+                });
+            }
+
+        });
+        // returnに作ったトランジションを設定。
+        Barba.Pjax.getTransition = function() {
+            return FadeTransition;
+        };
+        Barba.Pjax.start();
+    </script>
 </body>
 
 </html>
