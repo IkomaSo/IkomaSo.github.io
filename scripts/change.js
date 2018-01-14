@@ -27,6 +27,12 @@ var PageTransition = Barba.BaseTransition.extend({
     },
     loadIn: function() {
         var _this = this;
+
+        anime({
+            targets: this.newContainer,
+            translateX: '-300px'
+        });
+
         // 完了
         _this.done();
     },
