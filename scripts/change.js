@@ -32,8 +32,7 @@ var PageTransition = Barba.BaseTransition.extend({
         $(this.oldContainer).hide();
         anime({
             targets: this.newContainer,
-            translateX: '30vw'
-            direction: 'reverse'
+            translateX: '-50vw'
         });
 
         // 完了
