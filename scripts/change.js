@@ -19,11 +19,13 @@ var PageTransition = Barba.BaseTransition.extend({
             .then(this.loadIn.bind(this));
     },
     loadOut: function(resolve) {
-        anime({
-            targets: this.oldContainer,
-            translateX: '-10000px'
-        });
-        resolve();
+        new Promise(function(resolve, reject) {
+            anime({
+                targets: this.oldContainer,
+                translateX: '-300px'
+            });
+            resolve();
+        })
     },
     loadIn: function() {
         var _this = this;
