@@ -1,3 +1,4 @@
+AOS.init();
 Barba.Dispatcher.on(newPageReady, function() {
     AOS.init();
 });
