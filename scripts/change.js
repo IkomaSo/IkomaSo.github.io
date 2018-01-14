@@ -15,18 +15,16 @@ var PageTransition = Barba.BaseTransition.extend({
         // トランジション開始と同時にnewContainerLoadingメソッドも呼ばれ、
         // トランジション用のメソッドとどちらもresolve()であればthen()が呼ばれる。
         Promise
-            .all([this.newContainerLoading, this.loadOut()])
+            .all(this.newContainerLoading)
             .then(this.loadIn.bind(this));
     },
-    loadOut: function(resolve) {
 
-        resolve(anime({
-            targets: this.oldContainer,
-            translateX: '-10000px'
-        }));
-    },
     loadIn: function() {
         var _this = this;
+        anime({
+            targets: this.oldContainer,
+            translateX: '-300px'
+        });
         $(this.oldContainer).hide();
         anime({
             targets: this.newContainer,
