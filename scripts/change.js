@@ -1,4 +1,5 @@
 AOS.init();
+Barba.Prefetch.init();
 Barba.Dispatcher.on('newPageReady', function() {
     AOS.init();
 });
@@ -19,7 +20,7 @@ var PageTransition = Barba.BaseTransition.extend({
     },
     loadOut: function(resolve) {
         anime({
-            targets: '.barba-container',
+            targets: this.oldContainer,
             translateX: '-300px'
         });
         resolve();
@@ -31,5 +32,8 @@ var PageTransition = Barba.BaseTransition.extend({
     },
 });
 
-Barba.Prefetch.init();
-Barba.Pjax.init();
+Barba.Pjax.getTransition = function() {
+    return PageTransition;
+};
+
+Barba.Pjax.start();
