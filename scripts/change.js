@@ -19,8 +19,8 @@ var PageTransition = Barba.BaseTransition.extend({
     },
     loadOut: function(resolve) {
         anime({
-            targets: '.welcome',
-            translateX: '300px'
+            targets: '.barba-container',
+            translateX: '-300px'
         });
         resolve();
     },
