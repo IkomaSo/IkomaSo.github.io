@@ -1,8 +1,16 @@
-console.log("hello world!");
+var Hello = function(button) {
+    anime({
+        targets: 'html, body',
+        scrollTop: window.innerHeight,
+        duration: 3000
+    });
+}
+
 var StartTest = function(button) {
     $(".red").show();
     anime({
-        targets: '.red',
-        translateY: '-100vw'
+        targets: 'html, body',
+        scrollTop: window.innerHeight * 2,
+        duration: 3000
     });
 }

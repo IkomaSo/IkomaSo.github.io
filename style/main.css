@@ -256,11 +256,10 @@ a:active {
     text-align: center;
     position: relative;
     left: 50vw;
+    height: 100vh;
 }
 
-.test {
-    height: 500px;
-}
+.test {}
 
 .pt20 {
     font-size: 14px;
@@ -341,6 +340,7 @@ a:active {
 
 .deg_btn {
     position: relative;
+    top: 300px;
     display: inline-block;
     text-decoration: none;
     padding: 0 30px;
@@ -392,6 +392,6 @@ a:active {
 }
 
 .red {
-    height: 100px;
+    height: 100vh;
     background-color: #b40023;
 }
