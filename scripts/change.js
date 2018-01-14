@@ -7,10 +7,10 @@ Barba.Dispatcher.on('newPageReady', function() {
 var PageTransition = Barba.BaseTransition.extend({
     start: function() {
         // startはページトランジションの開始時に呼び出されるメソッド
-        var _this = this;
+        /*var _this = this;
         var _LoadOut = new Promise(function(resolve) {
             _this.LoadOut(resolve);
-        });
+        });*/
 
         // トランジション開始と同時にnewContainerLoadingメソッドも呼ばれ、
         // トランジション用のメソッドとどちらもresolve()であればthen()が呼ばれる。
@@ -21,7 +21,7 @@ var PageTransition = Barba.BaseTransition.extend({
     loadOut: function(resolve) {
         anime({
             targets: this.oldContainer,
-            translateX: '-300px'
+            translateX: '-10000px'
         });
         resolve();
     },
