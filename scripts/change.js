@@ -1,5 +1,5 @@
 AOS.init();
-Barba.Dispatcher.on(newPageReady, function() {
+Barba.Dispatcher.on('newPageReady', function() {
     AOS.init();
 });
 Barba.Prefetch.init();
