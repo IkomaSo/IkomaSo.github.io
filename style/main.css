@@ -392,6 +392,8 @@ a:active {
 }
 
 .red {
+    position: absolute;
+    left: 50vw;
     height: 100vh;
     background-color: #b40023;
 }
