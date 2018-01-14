@@ -29,12 +29,11 @@ var PageTransition = Barba.BaseTransition.extend({
     },
     loadIn: function() {
         var _this = this;
-        $(this.oldContainer).hide();
         anime({
             targets: this.newContainer,
             translateX: '-50vw'
         });
-
+        $(this.oldContainer).hide();
         // 完了
         _this.done();
     },
