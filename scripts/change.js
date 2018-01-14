@@ -27,7 +27,7 @@ var PageTransition = Barba.BaseTransition.extend({
     },
     loadIn: function() {
         var _this = this;
-
+        $(this.oldContainer).hide();
         anime({
             targets: this.newContainer,
             translateX: '-300px'
