@@ -252,10 +252,13 @@ a:active {
     box-shadow: 0 0 0 #90001c;
 }
 
-.test {
+.mid {
     text-align: center;
     position: relative;
     left: 50vw;
+}
+
+.test {
     height: 1000px;
 }
 
