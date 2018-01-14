@@ -81,7 +81,7 @@ b span {
 
 .select {
     text-align: center;
-    height: 1500px;
+    height: 1000px;
 }
 
 .hannnari {
@@ -253,6 +253,7 @@ a:active {
 }
 
 .test {
+    text-align: center;
     position: relative;
     left: 50vw;
 }
