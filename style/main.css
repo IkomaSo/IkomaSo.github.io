@@ -252,13 +252,10 @@ a:active {
     box-shadow: 0 0 0 #90001c;
 }
 
-.barba-containe {
-    position: absolute;
-    left: 50vw;
-}
-
 .test {
     text-align: center;
+    position: relative;
+    left: 50vw;
     height: 1000px;
 }
 
