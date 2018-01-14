@@ -390,3 +390,8 @@ a:active {
 .deg_btn:hover {
     background: #02a1e0;
 }
+
+.red {
+    height: 100px;
+    background-color: #b40023;
+}
