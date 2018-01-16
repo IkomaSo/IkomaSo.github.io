@@ -16,6 +16,7 @@
 }
 
 .welcome {
+    z-index: 30;
     font-family: "Source Code Pro", monospace;
     font-weight: 300;
     font-size: 7vmin;

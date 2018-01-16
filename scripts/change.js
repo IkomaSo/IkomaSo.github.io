@@ -22,7 +22,7 @@ var PageTransition = Barba.BaseTransition.extend({
         new Promise(function(resolve, reject) {
             anime({
                 targets: this.oldContainer,
-                translateX: '-50vw'
+                translateY: '-100vw'
             });
             resolve();
         })
@@ -31,8 +31,7 @@ var PageTransition = Barba.BaseTransition.extend({
         var _this = this;
         anime({
             targets: this.newContainer,
-            translateY: ['100vh', 0],
-            easing: 'easeInOutQuart'
+            translateY: ['80vh', 0],
         });
         $(this.oldContainer).hide();
         // 完了
