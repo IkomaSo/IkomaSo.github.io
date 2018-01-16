@@ -20,11 +20,6 @@ function arrayToData() {
     }
 }
 
-csvToArray("./vocabularys/sample.csv");
-arrayToData();
-console.log(text[0][0]);
-console.log(data[0][0][0]);
-console.log(data[0][2][1]);
 var Hello = function(button) {
     anime({
         targets: 'html, body',
@@ -34,6 +29,16 @@ var Hello = function(button) {
 }
 
 var StartTest = function(button) {
+    for (var i = 1; i <= 5; ++i) {
+        var obj = document.getElementById(i);
+        if (obj.checked) {
+            csvToArray("./vocabularys/test" + i + ".csv");
+        }
+    }
+
+    arrayToData();
+    console.log(data[0][2][1]);
+
     $(".red").show();
     anime({
         targets: 'html, body',
