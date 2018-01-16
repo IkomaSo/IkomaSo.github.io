@@ -24,7 +24,7 @@ var PageTransition = Barba.BaseTransition.extend({
                 targets: this.oldContainer,
                 translateX: {
                     value: '50vw',
-                    duration: 0
+                    duration: 1
                 },
                 translateX: {
                     value: '-50',
