@@ -20,7 +20,7 @@ function arrayToData() {
     }
 }
 
-csvToArray("../vocabularys/sample.csv");
+csvToArray("./vocabularys/sample.csv");
 arrayToData();
 console.log(text[0][0]);
 console.log(data[0][0][0]);
