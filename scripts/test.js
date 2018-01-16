@@ -20,11 +20,6 @@ function arrayToData() {
     }
 }
 
-csvToArray("./vocabularys/sample.csv");
-arrayToData();
-console.log(text[0][0]);
-console.log(data[0][0][0]);
-console.log(data[0][2][1]);
 var Hello = function(button) {
     anime({
         targets: 'html, body',
