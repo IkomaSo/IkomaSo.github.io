@@ -22,7 +22,14 @@ var PageTransition = Barba.BaseTransition.extend({
         new Promise(function(resolve, reject) {
             anime({
                 targets: this.oldContainer,
-                translateX: '-50vw'
+                translateX: {
+                    value: '50vw',
+                    duration: 0
+                },
+                translateX: {
+                    value: '-50',
+                    duration: 800
+                },
             });
             resolve();
         })

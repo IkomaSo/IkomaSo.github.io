@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0px;
-    overflow: hidden;
 }
 
 .cont {
@@ -256,7 +255,6 @@ a:active {
 .mid {
     text-align: center;
     position: relative;
-    left: 50vw;
     height: 100vh;
 }
 
