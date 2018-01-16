@@ -31,14 +31,7 @@ var PageTransition = Barba.BaseTransition.extend({
         var _this = this;
         anime({
             targets: this.newContainer,
-            translateX: {
-                value: '50vw',
-                duration: 0
-            },
-            translateX: {
-                value: '-50vw',
-                duration: 800
-            },
+            translateX: ['70vw', 0]
         });
         $(this.oldContainer).hide();
         // 完了
