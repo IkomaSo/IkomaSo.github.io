@@ -38,6 +38,27 @@ function questionChange(q) {
     document.getElementById("question").innerHTML = q;
 }
 
+function choicesChange() {
+    while (1) {
+        var random3 = Math.floor(Math.random() * text.length);
+        var random4 = Math.floor(Math.random() * 40) + 1;
+        if (data[random3][0][1] >= random4) { break; }
+    }
+    document.getElementById("c1").innerHTML = data[random3][random4][1];
+    while (1) {
+        var random3 = Math.floor(Math.random() * text.length);
+        var random4 = Math.floor(Math.random() * 40) + 1;
+        if (data[random3][0][1] >= random4) { break; }
+    }
+    document.getElementById("c2").innerHTML = data[random3][random4][1];
+    while (1) {
+        var random3 = Math.floor(Math.random() * text.length);
+        var random4 = Math.floor(Math.random() * 40) + 1;
+        if (data[random3][0][1] >= random4) { break; }
+    }
+    document.getElementById("c3").innerHTML = data[random3][random4][1];
+}
+
 var Hello = function(button) {
     anime({
         targets: 'html, body',
