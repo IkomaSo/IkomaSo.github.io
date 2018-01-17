@@ -60,6 +60,7 @@ function choicesChange() {
     document.getElementById("c3").innerHTML = data[random7][random8][1];
 
     var random9 = Math.floor(Math.random() * 4) + 1;
+    console.log(data[random1][random2][1]);
     document.getElementById("c" + random9).innerHTML = data[random1][random2][1];
 
 }
