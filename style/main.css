@@ -407,21 +407,6 @@ a:active {
     top: 25vh;
 }
 
-.c1 {
-    top: 50vh;
-    text-align: center;
-}
-
-.c2 {
-    top: 60vh;
-    text-align: center;
-}
-
-.c3 {
-    top: 70vh;
-    text-align: center;
-}
-
 .button {
     position: relative;
     display: inline-block;
