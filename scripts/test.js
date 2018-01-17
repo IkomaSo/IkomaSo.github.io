@@ -1,7 +1,9 @@
+var cnt = 0;
+
 var text = new Array();
 var data = new Array(1000);
 for (var i = 0; i < 3; i++) {
-    data[i] = new Array(2);
+    data[i] = new Array(3);
 }
 
 function csvToArray(path) {
@@ -18,6 +20,17 @@ function arrayToData() {
             data[i][j] = s[j].split(',');
         }
     }
+}
+
+function Game() {
+    var random = Math.floor(Math.random() * data.length);
+    var random2 = Math.floor(Math.random() * 40);
+    questionChange("Hello World!")
+
+}
+
+function questionChange(q) {
+    document.getElementById("question").innerHTML = q;
 }
 
 var Hello = function(button) {
@@ -43,6 +56,8 @@ var StartTest = function(button) {
     arrayToData();
     console.log(data[0][0][0]);
     console.log(data[0][2][1]);
+
+    Game();
 
     $(".red").show();
     anime({
