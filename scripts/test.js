@@ -31,7 +31,9 @@ function Game() {
         if (data[random1][0][1] >= random2) { break; }
     }
     questionChange(data[random1][random2][0]);
-    choicesChange();
+    console.log(data[random1][random2][1]);
+    var ans = data[random1][random2][1]
+    choicesChange(ans);
 
 }
 
@@ -39,7 +41,7 @@ function questionChange(q) {
     document.getElementById("question").innerHTML = q;
 }
 
-function choicesChange() {
+function choicesChange(ans) {
     while (1) {
         var random3 = Math.floor(Math.random() * text.length);
         var random4 = Math.floor(Math.random() * 40) + 1;
@@ -60,8 +62,7 @@ function choicesChange() {
     document.getElementById("c3").innerHTML = data[random7][random8][1];
 
     var random9 = Math.floor(Math.random() * 4) + 1;
-    console.log(data[random1][random2][1]);
-    document.getElementById("c3").innerHTML = data[random1][random2][1];
+    document.getElementById("c3").innerHTML = ans;
 
 }
 
