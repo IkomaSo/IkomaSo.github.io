@@ -62,7 +62,7 @@ function choicesChange(ans) {
     document.getElementById("c3").innerHTML = data[random7][random8][1];
 
     var random9 = Math.floor(Math.random() * 4) + 1;
-    document.getElementById("c3").innerHTML = ans;
+    document.getElementById("c" + random9).innerHTML = ans;
 
 }
 
@@ -104,4 +104,6 @@ var StartTest = function(button) {
     $(window).on('touchmove.noScroll', function(e) {
         e.preventDefault();
     });
+    var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
+    $(document).on(scroll_event, function(e) { e.preventDefault(); });
 }
