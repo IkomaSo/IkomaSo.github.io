@@ -24,7 +24,7 @@ function arrayToData() {
 
 function Game() {
     while (1) {
-        var random1 = Math.floor(Math.random() * data.length);
+        var random1 = Math.floor(Math.random() * text.length);
         var random2 = Math.floor(Math.random() * 40) + 1;
         console.log(random1);
         console.log(random2);
