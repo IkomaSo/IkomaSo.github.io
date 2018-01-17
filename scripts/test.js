@@ -47,17 +47,18 @@ function choicesChange() {
     }
     document.getElementById("c1").innerHTML = data[random3][random4][1];
     while (1) {
-        var random3 = Math.floor(Math.random() * text.length);
-        var random4 = Math.floor(Math.random() * 40) + 1;
-        if (data[random3][0][1] >= random4) { break; }
+        var random5 = Math.floor(Math.random() * text.length);
+        var random6 = Math.floor(Math.random() * 40) + 1;
+        if (data[random5][0][1] >= random6) { break; }
     }
-    document.getElementById("c2").innerHTML = data[random3][random4][1];
+    document.getElementById("c2").innerHTML = data[random5][random6][1];
     while (1) {
-        var random3 = Math.floor(Math.random() * text.length);
-        var random4 = Math.floor(Math.random() * 40) + 1;
-        if (data[random3][0][1] >= random4) { break; }
+        var random7 = Math.floor(Math.random() * text.length);
+        var random8 = Math.floor(Math.random() * 40) + 1;
+        if (data[random7][0][1] >= random8) { break; }
     }
-    document.getElementById("c3").innerHTML = data[random3][random4][1];
+    document.getElementById("c3").innerHTML = data[random7][random8][1];
+
 }
 
 var Hello = function(button) {
