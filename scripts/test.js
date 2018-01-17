@@ -76,7 +76,7 @@ var Hello = function(button) {
 }
 
 var StartTest = function(button) {
-    for (var i = 1; i <= 5; ++i) {
+    for (var i = 1; i <= 1; ++i) {
         var obj = document.getElementById(i);
         if (obj.checked) {
             csvToArray("./vocabularys/test" + i + ".csv");
@@ -107,3 +107,13 @@ var StartTest = function(button) {
     var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
     $(document).on(scroll_event, function(e) { e.preventDefault(); });
 }
+
+var elem = document.querySelector('input[type="range"]');
+
+var rangeValue = function() {
+    var newValue = elem.value;
+    var target = document.querySelector('.value');
+    target.innerHTML = newValue;
+}
+
+elem.addEventListener("input", rangeValue);
