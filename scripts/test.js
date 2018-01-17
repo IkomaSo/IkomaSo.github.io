@@ -59,13 +59,17 @@ function choicesChange() {
     }
     document.getElementById("c3").innerHTML = data[random7][random8][1];
 
+    var random9 = Math.floor(Math.random() * 4) + 1;
+    document.getElementById("c" + random9).innerHTML = data[random1][random2][1];
+
 }
 
 var Hello = function(button) {
     anime({
         targets: 'html, body',
         scrollTop: window.innerHeight,
-        duration: 3000
+        duration: 3000,
+        easing: 'easeInOutQuart'
     });
 }
 
@@ -91,6 +95,11 @@ var StartTest = function(button) {
     anime({
         targets: 'html, body',
         scrollTop: window.innerHeight * 2,
-        duration: 3000
+        duration: 3000,
+        easing: 'easeInOutQuart'
+    });
+
+    $(window).on('touchmove.noScroll', function(e) {
+        e.preventDefault();
     });
 }
