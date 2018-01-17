@@ -23,9 +23,12 @@ function arrayToData() {
 }
 
 function Game() {
-    var random = Math.floor(Math.random() * data.length);
-    var random2 = Math.floor(Math.random() * 40);
-    questionChange("Hello World!")
+    while (1) {
+        var random1 = Math.floor(Math.random() * data.length);
+        var random2 = Math.floor(Math.random() * 40) + 1;
+        if (data[random1][random2][0] == null) break;
+    }
+    questionChange(data[random1][random2][0]);
 
 }
 
