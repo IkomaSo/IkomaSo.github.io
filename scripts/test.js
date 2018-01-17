@@ -31,6 +31,7 @@ function Game() {
         if (data[random1][0][1] >= random2) { break; }
     }
     questionChange(data[random1][random2][0]);
+    choicesChange();
 
 }
 
