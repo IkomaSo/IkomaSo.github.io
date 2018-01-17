@@ -407,6 +407,21 @@ a:active {
     top: 25vh;
 }
 
+.c1 {
+    top: 50vh;
+    display: block;
+}
+
+.c2 {
+    top: 60vh;
+    display: block;
+}
+
+.c3 {
+    top: 70vh;
+    display: block;
+}
+
 .button {
     position: relative;
     display: inline-block;
