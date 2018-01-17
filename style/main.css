@@ -426,6 +426,7 @@ a:active {
     color: #fff;
     text-align: center;
     text-decoration: none;
+    font-size: 2vh;
     outline: none;
     overflow: hidden;
     transition: all .5s;
