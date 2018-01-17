@@ -26,7 +26,7 @@ function Game() {
     while (1) {
         var random1 = Math.floor(Math.random() * data.length);
         var random2 = Math.floor(Math.random() * 40) + 1;
-        if (data[random1].length > random2) break;
+        if (data[random1][0][1] >= random2) break;
     }
     questionChange(data[random1][random2][0]);
 
