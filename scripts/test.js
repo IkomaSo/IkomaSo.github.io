@@ -94,7 +94,7 @@ var StartTest = function(button) {
         sum = Math.floor(sum * document.getElementById("range").value / 100)
     }
 
-    document.getElementById("number").innerHTML = cnt + " / " + sum + " 門";
+    document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
 
 
     console.log(data[0][2][1]);
