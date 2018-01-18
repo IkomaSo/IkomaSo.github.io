@@ -100,11 +100,16 @@ b span {
     top: 100px;
 }
 
+.hann {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 5vmin;
+    font-weight: 900;
+}
+
 .term1 {
     font-family: 'Source Code Pro', monospace;
     font-size: 3vmin;
     position: relative;
-    top: 150px;
 }
 
 a:active {
@@ -280,7 +285,6 @@ a:active {
     line-height: 1.42857143;
     font-family: "Source Code Pro", monospace;
     position: relative;
-    top: 200px;
     padding-top: 20px;
 }
 
@@ -359,13 +363,11 @@ a:active {
     font-size: 5vmin;
     font-weight: 900;
     position: relative;
-    top: 300px;
 }
 
 .value {
     font-family: "Source Code Pro", monospace;
     position: relative;
-    top: 350px;
     border-bottom: 4px dashed #bdc3c7;
     text-align: center;
     font-weight: bold;
@@ -380,7 +382,6 @@ a:active {
 
 input[type="range"] {
     position: relative;
-    top: 380px;
     display: block;
     -webkit-appearance: none;
     background-color: #bdc3c7;
@@ -413,7 +414,6 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 .deg_btn {
     position: relative;
-    top: 600px;
     display: inline-block;
     text-decoration: none;
     padding: 0 30px;
