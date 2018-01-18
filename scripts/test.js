@@ -8,7 +8,7 @@ var rangeValue = function() {
     target.innerHTML = newValue + "%";
 }
 
-elem.addEventListener("input", rangeValue);
+elem.addEventListener("input", rangeValue, false);
 
 var text = new Array();
 var data = new Array(1000);
