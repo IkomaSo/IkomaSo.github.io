@@ -1,6 +1,6 @@
 var cnt = 0;
 var elem = document.querySelector('input[type="range"]');
-console.log(elem.val());
+console.log(elem);
 var rangeValue = function() {
     var newValue = elem.val();
     var target = document.querySelector('.value');
