@@ -86,19 +86,19 @@ function choicesChange(ans) {
     while (1) {
         random3 = Math.floor(Math.random() * text.length);
         random4 = Math.floor(Math.random() * 40) + 1;
-        if (data[random3][0][1] >= random4 || !(random3 == random1 || random4 == random2)) { break; }
+        if (data[random3][0][1] >= random4 && !(random3 == random1 && random4 == random2)) { break; }
     }
     document.getElementById("c1").innerHTML = data[random3][random4][1];
     while (1) {
         random5 = Math.floor(Math.random() * text.length);
         random6 = Math.floor(Math.random() * 40) + 1;
-        if (data[random5][0][1] >= random6 || !(random5 == random1 || random6 == random2) || !(random3 == random5 || random4 == random6)) { break; }
+        if (data[random5][0][1] >= random6 && !(random5 == random1 && random6 == random2) && !(random3 == random5 && random4 == random6)) { break; }
     }
     document.getElementById("c2").innerHTML = data[random5][random6][1];
     while (1) {
         random7 = Math.floor(Math.random() * text.length);
         random8 = Math.floor(Math.random() * 40) + 1;
-        if (data[random7][0][1] >= random8 || !(random7 == random1 || random8 == random2) || !(random3 == random7 || random4 == random8) || !(random5 == random7 || random6 == random8)) { break; }
+        if (data[random7][0][1] >= random8 && !(random7 == random1 && random8 == random2) && !(random3 == random7 && random4 == random8) || !(random5 == random7 || random6 == random8)) { break; }
     }
     document.getElementById("c3").innerHTML = data[random7][random8][1];
 
