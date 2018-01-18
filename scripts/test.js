@@ -44,7 +44,7 @@ function select(choice) {
     console.log(random9);
     console.log(choice);
     if (cnt >= sum) {
-        alert("終了\n正解数： " + (sum - miss) + " 問\nホームへ戻ります");
+        alert("終了\n正解数： " + (sum - miss) + " / " + sum + " 問\nホームへ戻ります");
         location.href = 'https://ikomaso.github.io/select.html';
     }
     if (random9 == choice) {
