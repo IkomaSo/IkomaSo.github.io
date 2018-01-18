@@ -1,4 +1,5 @@
-var cnt = 0;
+var cnt = 1;
+var miss = 0;
 var text = new Array();
 var data = new Array(1000);
 for (var i = 0; i < 3; i++) {
@@ -34,6 +35,22 @@ function Game() {
     var ans = data[random1][random2][1]
     choicesChange(ans);
 
+}
+
+function select(choice) {
+    if (cnt >= sum) {
+        alert("終了\n正解数： " + (sum - miss) + " 問\nホームへ戻ります");
+        location.href = 'https://ikomaso.github.io/select.html';
+    }
+    if (random9 == choice) {
+        cnt++;
+        Game();
+    } else {
+        alert("不正解\n答え：" + ans);
+        miss++;
+        cnt++;
+        Game();
+    }
 }
 
 function questionChange(q) {
