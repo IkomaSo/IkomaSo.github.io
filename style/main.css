@@ -25,6 +25,13 @@
     top: 45vh;
 }
 
+.about {
+    position: relative;
+    top: 150px;
+    font-family: "Source Code Pro", 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 2vmin;
+}
+
 b {
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
@@ -121,7 +128,7 @@ a:active {
 }
 
 .push1:before {
-    content: "小納言";
+    content: "はじめる";
     padding-top: 16px;
     width: 100%;
     height: 100%;
