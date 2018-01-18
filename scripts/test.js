@@ -1,6 +1,6 @@
 var cnt = 0;
 var elem = document.getElementById("range1");
-console.log(elem.value);
+console.log(elem);
 
 function getValue() {
     var newValue = elem.value;
