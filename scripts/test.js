@@ -82,7 +82,7 @@ var StartTest = function(button) {
         }
     }
 
-    console.log(text.length);
+    console.log(data[i][0][1]);
 
     if (text.length == 0) {
         alert("テストを選択してください")
