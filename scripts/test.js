@@ -64,7 +64,7 @@ function select(choice) {
         alert("不正解\n答え：" + ans);
         miss++;
         cnt++;
-        data[random1][random2][2] = "miss";
+        data[random1][random2].push("correct");
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     }
     while (1) {
