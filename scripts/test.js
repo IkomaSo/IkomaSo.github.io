@@ -1,5 +1,5 @@
 var cnt = 0;
-var elem = document.querySelector('input[type="range"]');
+var elem = document.getElementById("range");
 console.log(elem);
 var rangeValue = function() {
     var newValue = elem.val();
