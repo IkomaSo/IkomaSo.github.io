@@ -82,6 +82,8 @@ var StartTest = function(button) {
         }
     }
 
+    console.log(text.length);
+
     if (text.length == 0) {
         alert("テストを選択してください")
     }
