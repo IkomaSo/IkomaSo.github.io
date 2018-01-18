@@ -64,7 +64,6 @@ function select(choice) {
         alert("不正解\n答え：" + ans);
         miss++;
         cnt++;
-        data[random1][random2].push("correct");
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     }
     while (1) {
@@ -72,9 +71,7 @@ function select(choice) {
         var random2 = Math.floor(Math.random() * 40) + 1;
         console.log(random1);
         console.log(random2);
-        if (data[random1][0][1] >= random2) {
-            if (data[random1][random2][2].length != 0) { break; }
-        }
+        if (data[random1][0][1] >= random2) { break; }
     }
     questionChange(data[random1][random2][0]);
     console.log(data[random1][random2][1]);
