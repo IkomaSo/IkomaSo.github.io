@@ -58,7 +58,6 @@ function select(choice) {
     }
     if (random9 == choice) {
         cnt++;
-        data[random1][random2][2] = "correct";
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     } else {
         alert("不正解\n答え：" + ans);
