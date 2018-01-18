@@ -96,7 +96,7 @@ var StartTest = function(button) {
     anime({
         targets: 'html, body',
         scrollTop: $(document).height() - $(window).scrollTop() + $(window).height(),
-        duration: 1000,
+        duration: 2000,
         easing: 'easeInOutQuart'
     });
 
