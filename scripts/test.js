@@ -98,7 +98,6 @@ var StartTest = function(button) {
     document.getElementById("number").innerHTML = cnt + " / " + sum + " 門";
 
     arrayToData();
-    console.log(data[0][0][0]);
     console.log(data[0][2][1]);
 
     Game();
