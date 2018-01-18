@@ -58,11 +58,13 @@ function select(choice) {
     }
     if (random9 == choice) {
         cnt++;
+        data[random1][random2][2] = "correct";
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     } else {
         alert("不正解\n答え：" + ans);
         miss++;
         cnt++;
+        data[random1][random2][2] = "miss";
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     }
     while (1) {
@@ -70,7 +72,9 @@ function select(choice) {
         var random2 = Math.floor(Math.random() * 40) + 1;
         console.log(random1);
         console.log(random2);
-        if (data[random1][0][1] >= random2) { break; }
+        if (data[random1][0][1] >= random2) {
+            if (data[random1][random2][2].length != 0) { break; }
+        }
     }
     questionChange(data[random1][random2][0]);
     console.log(data[random1][random2][1]);
