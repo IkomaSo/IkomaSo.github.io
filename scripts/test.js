@@ -1,5 +1,7 @@
 var cnt = 1;
 var miss = 0;
+var sum = 0;
+var ans;
 var text = new Array();
 var data = new Array(1000);
 for (var i = 0; i < 3; i++) {
@@ -32,7 +34,7 @@ function Game() {
     }
     questionChange(data[random1][random2][0]);
     console.log(data[random1][random2][1]);
-    var ans = data[random1][random2][1]
+    ans = data[random1][random2][1]
     choicesChange(ans);
 
 }
@@ -104,7 +106,6 @@ var StartTest = function(button) {
         alert("テストを選択してください")
     }
     arrayToData();
-    var sum = 0;
 
     for (var i = 0; i < text.length; ++i) {
         sum += Number(data[i][0][1]);
