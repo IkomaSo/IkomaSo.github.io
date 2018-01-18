@@ -1,7 +1,20 @@
 AOS.init();
 Barba.Prefetch.init();
-Barba.Dispatcher.on('newPageReady', function() {
+Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container, newPageRawHTML) {
+
+    //ページ読み込み時にスクリプトを再読み込み
+    var elem = document.getElementById("range");
+    console.log(elem);
+    var rangeValue = function() {
+        var newValue = elem.value;
+        var target = document.querySelector('.value');
+        target.innerHTML = newValue;
+    }
+
+    elem.addEventListener("input", rangeValue);
     AOS.init();
+    return false;
+
 });
 
 var PageTransition = Barba.BaseTransition.extend({
