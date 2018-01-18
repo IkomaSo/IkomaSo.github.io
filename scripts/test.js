@@ -47,13 +47,22 @@ function select(choice) {
     }
     if (random9 == choice) {
         cnt++;
-        return Game();
     } else {
         alert("不正解\n答え：" + ans);
         miss++;
         cnt++;
-        return Game();
     }
+    while (1) {
+        var random1 = Math.floor(Math.random() * text.length);
+        var random2 = Math.floor(Math.random() * 40) + 1;
+        console.log(random1);
+        console.log(random2);
+        if (data[random1][0][1] >= random2) { break; }
+    }
+    questionChange(data[random1][random2][0]);
+    console.log(data[random1][random2][1]);
+    ans = data[random1][random2][1]
+    choicesChange(ans);
 }
 
 function questionChange(q) {
