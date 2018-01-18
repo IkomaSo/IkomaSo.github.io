@@ -93,7 +93,7 @@ function choicesChange(ans) {
     }
     document.getElementById("c3").innerHTML = data[random7][random8][1];
 
-    random9 = Math.floor(Math.random() * 4) + 1;
+    random9 = Math.floor(Math.random() * 3) + 1;
     document.getElementById("c" + random9).innerHTML = ans;
 
 }
