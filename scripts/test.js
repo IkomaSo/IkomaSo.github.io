@@ -82,12 +82,11 @@ var StartTest = function(button) {
         }
     }
 
-    console.log(data);
 
     if (text.length == 0) {
         alert("テストを選択してください")
     }
-
+    arrayToData();
     var sum = 0;
 
     for (var i = 0; i < text.length; ++i) {
@@ -97,7 +96,7 @@ var StartTest = function(button) {
 
     document.getElementById("number").innerHTML = cnt + " / " + sum + " 門";
 
-    arrayToData();
+
     console.log(data[0][2][1]);
 
     Game();
