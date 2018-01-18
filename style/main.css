@@ -543,5 +543,5 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 .explain {
     font-family: "Source Code Pro", 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    font-size: 2vmin;
+    font-size: 1vmin;
 }
