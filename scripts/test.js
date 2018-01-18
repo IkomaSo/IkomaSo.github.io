@@ -1,4 +1,14 @@
 var cnt = 0;
+var elem = document.querySelector('input[type="range"]');
+
+var rangeValue = function() {
+    var newValue = elem.value;
+    console.log(newValue);
+    var target = document.querySelector('.value');
+    target.innerHTML = newValue + "%";
+}
+
+elem.addEventListener("input", rangeValue);
 
 var text = new Array();
 var data = new Array(1000);
@@ -107,13 +117,3 @@ var StartTest = function(button) {
     var scroll_event = 'onwheel' in document ? 'wheel' : 'onmousewheel' in document ? 'mousewheel' : 'DOMMouseScroll';
     $(document).on(scroll_event, function(e) { e.preventDefault(); });
 }
-
-var elem = document.querySelector('input[type="range"]');
-
-var rangeValue = function() {
-    var newValue = elem.value;
-    var target = document.querySelector('.value');
-    target.innerHTML = newValue;
-}
-
-elem.addEventListener("input", rangeValue);
