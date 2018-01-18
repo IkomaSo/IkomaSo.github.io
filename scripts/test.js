@@ -3,6 +3,15 @@ var miss = 0;
 var sum = 0;
 var ans;
 var random9;
+var random1;
+var random2;
+var random3;
+var random4;
+var random5;
+var random6;
+var random7;
+var random8;
+
 var text = new Array();
 var data = new Array(1000);
 for (var i = 0; i < 3; i++) {
@@ -27,8 +36,8 @@ function arrayToData() {
 
 function Game() {
     while (1) {
-        var random1 = Math.floor(Math.random() * text.length);
-        var random2 = Math.floor(Math.random() * 40) + 1;
+        random1 = Math.floor(Math.random() * text.length);
+        random2 = Math.floor(Math.random() * 40) + 1;
         console.log(random1);
         console.log(random2);
         if (data[random1][0][1] >= random2) { break; }
@@ -75,20 +84,20 @@ function questionChange(q) {
 
 function choicesChange(ans) {
     while (1) {
-        var random3 = Math.floor(Math.random() * text.length);
-        var random4 = Math.floor(Math.random() * 40) + 1;
+        random3 = Math.floor(Math.random() * text.length);
+        random4 = Math.floor(Math.random() * 40) + 1;
         if (data[random3][0][1] >= random4 || !(random3 == random1 || random4 == random2)) { break; }
     }
     document.getElementById("c1").innerHTML = data[random3][random4][1];
     while (1) {
-        var random5 = Math.floor(Math.random() * text.length);
-        var random6 = Math.floor(Math.random() * 40) + 1;
+        random5 = Math.floor(Math.random() * text.length);
+        random6 = Math.floor(Math.random() * 40) + 1;
         if (data[random5][0][1] >= random6 || !(random5 == random1 || random6 == random2) || !(random3 == random5 || random4 == random6)) { break; }
     }
     document.getElementById("c2").innerHTML = data[random5][random6][1];
     while (1) {
-        var random7 = Math.floor(Math.random() * text.length);
-        var random8 = Math.floor(Math.random() * 40) + 1;
+        random7 = Math.floor(Math.random() * text.length);
+        random8 = Math.floor(Math.random() * 40) + 1;
         if (data[random7][0][1] >= random8 || !(random7 == random1 || random8 == random2) || !(random3 == random7 || random4 == random8) || !(random5 == random7 || random6 == random8)) { break; }
     }
     document.getElementById("c3").innerHTML = data[random7][random8][1];
