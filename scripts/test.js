@@ -1,13 +1,17 @@
 var cnt = 0;
-var elem = document.getElementById("range");
-console.log(elem);
-var rangeValue = function() {
-    var newValue = elem.value;
-    var target = document.querySelector('.value');
-    target.innerHTML = newValue;
+window.onload = function() {
+    // ページ読み込み時に実行したい処理
+    var elem = document.getElementById("range");
+    console.log(elem);
+    var rangeValue = function() {
+        var newValue = elem.value;
+        var target = document.querySelector('.value');
+        target.innerHTML = newValue;
+    }
+
+    elem.addEventListener("input", rangeValue);
 }
 
-elem.addEventListener("input", rangeValue);
 var text = new Array();
 var data = new Array(1000);
 for (var i = 0; i < 3; i++) {
