@@ -476,19 +476,19 @@ input[type="range"]::-webkit-slider-thumb:active {
     font-family: "Source Code Pro", 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-size: 5vh;
     position: relative;
-    top: 25vh;
+    padding-top: 10vh;
 }
 
 .c1 {
-    top: 40vh;
+    top: 10vh;
 }
 
 .c2 {
-    top: 46vh;
+    top: 16vh;
 }
 
 .c3 {
-    top: 52vh;
+    top: 22vh;
 }
 
 .button {
