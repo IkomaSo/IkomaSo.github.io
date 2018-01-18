@@ -1,9 +1,9 @@
 var cnt = 0;
-var elem = document.querySelector('input[type="range"]');
+var elem = document.getElementById("range1");
 console.log(elem.value);
 var rangeValue = function() {
     var newValue = elem.value;
-    var target = document.querySelector('.value');
+    var target = document.getElementById("value");
     target.innerHTML = newValue + "%";
 }
 
