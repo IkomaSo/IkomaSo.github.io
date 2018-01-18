@@ -276,7 +276,7 @@ a:active {
 .mid {
     text-align: center;
     position: relative;
-    height: 100vh;
+    padding-bottom: 150px;
 }
 
 .test {}
@@ -468,7 +468,6 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 .red {
     text-align: center;
-    position: relative;
     height: 100vh;
     background-color: #b40023;
 }
