@@ -167,7 +167,6 @@ a:active {
     text-decoration: none;
     position: relative;
     left: calc(50vw - 70px);
-    top: 225px;
     transition: .2s ease-in-out;
     text-indent: -9999em;
 }
