@@ -47,12 +47,12 @@ function select(choice) {
     }
     if (random9 == choice) {
         cnt++;
-        Game();
+        return Game();
     } else {
         alert("不正解\n答え：" + ans);
         miss++;
         cnt++;
-        Game();
+        return Game();
     }
 }
 
