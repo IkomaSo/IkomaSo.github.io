@@ -498,6 +498,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     color: #fff;
     text-align: center;
     text-decoration: none;
+    font-family: "Source Code Pro", 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-size: 2vh;
     outline: none;
     overflow: hidden;
