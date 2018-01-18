@@ -49,10 +49,12 @@ function select(choice) {
     }
     if (random9 == choice) {
         cnt++;
+        document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     } else {
         alert("不正解\n答え：" + ans);
         miss++;
         cnt++;
+        document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     }
     while (1) {
         var random1 = Math.floor(Math.random() * text.length);
