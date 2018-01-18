@@ -548,3 +548,9 @@ input[type="range"]::-webkit-slider-thumb:active {
     padding-top: 100px;
     padding-bottom: 40px;
 }
+
+.number {
+    font-family: "Source Code Pro", 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 3vmin;
+    padding-top: 10vh;
+}

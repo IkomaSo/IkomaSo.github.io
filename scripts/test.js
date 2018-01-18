@@ -86,6 +86,15 @@ var StartTest = function(button) {
         alert("テストを選択してください")
     }
 
+    var sum = 0;
+
+    for (var i = 0; i < text.length; ++i) {
+        sum += data[i][0][1];
+        sum = Math.floor(sum * document.getElementById("range").value / 100)
+    }
+
+    document.getElementById("number").innerHTML = cnt + " / " + sum + " 門";
+
     arrayToData();
     console.log(data[0][0][0]);
     console.log(data[0][2][1]);
