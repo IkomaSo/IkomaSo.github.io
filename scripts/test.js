@@ -1,13 +1,13 @@
 var cnt = 0;
-var elem = document.getElementById("range1");
-console.log(elem);
+var elem = document.querySelector('input[type="range"]');
 
-function getValue(val) {
-    var target = document.getElementById("value");
-    target.innerHTML = val + "%";
+var rangeValue = function() {
+    var newValue = elem.val();
+    var target = document.querySelector('.value');
+    target.innerHTML = newValue;
 }
 
-
+elem.addEventListener("input", rangeValue);
 var text = new Array();
 var data = new Array(1000);
 for (var i = 0; i < 3; i++) {
