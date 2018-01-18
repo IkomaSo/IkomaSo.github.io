@@ -36,7 +36,7 @@
                     <div>
                         <p class="per">Percentage:</p>
                         <div class="value" id="value">0</div>
-                        <input id="range1" type="range" min="0" max="10" step="1" value="0" onchange="getValue()"></div>
+                        <input id="range1" type="range" min="0" max="10" step="1" value="0" oninput="getValue(this.value)" onchange="getValue(this.value)"></div>
                 </div>
                 <a class="deg_btn" onclick='StartTest(this)'>START</a>
             </div>

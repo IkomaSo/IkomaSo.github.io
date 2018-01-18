@@ -2,10 +2,9 @@ var cnt = 0;
 var elem = document.getElementById("range1");
 console.log(elem);
 
-function getValue() {
-    var newValue = elem.value;
+function getValue(val) {
     var target = document.getElementById("value");
-    target.innerHTML = newValue + "%";
+    target.innerHTML = val + "%";
 }
 
 
