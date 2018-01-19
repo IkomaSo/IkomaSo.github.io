@@ -146,8 +146,8 @@ var StartTest = function(button) {
 
     for (var i = 0; i < text.length; ++i) {
         sum += Number(data[i][0][1]);
-        sum = Math.floor(sum * document.getElementById("range").value / 100)
     }
+    sum = Math.floor(sum * document.getElementById("range").value / 100)
 
     document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
 
