@@ -13,11 +13,11 @@ var random7;
 var random8;
 
 var text = new Array();
-var data = new Array(1000);
+var data = [];
 for (var i = 0; i < 1000; i++) {
-    data[i] = new Array(1000);
+    data[i] = [];
     for (var j = 0; j < 3; j++) {
-        data[i][j] = new Array(3);
+        data[i][j] = [];
     }
 }
 var done = new Array(1000);
