@@ -74,8 +74,8 @@ function select(choice) {
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     }
     while (1) {
-        var random1 = Math.floor(Math.random() * text.length);
-        var random2 = Math.floor(Math.random() * 40) + 1;
+        random1 = Math.floor(Math.random() * text.length);
+        random2 = Math.floor(Math.random() * 40) + 1;
         console.log(random1);
         console.log(random2);
         if (data[random1][0][1] >= random2) { break; }
