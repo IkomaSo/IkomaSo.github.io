@@ -17,6 +17,10 @@ var data = new Array(1000);
 for (var i = 0; i < 3; i++) {
     data[i] = new Array(3);
 }
+var done = new Array(1000);
+for (var i = 0; i < 3; i++) {
+    done[i] = new Array(3);
+}
 
 function csvToArray(path) {
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
@@ -44,7 +48,7 @@ function Game() {
     }
     questionChange(data[random1][random2][0]);
     console.log(data[random1][random2][1]);
-    ans = data[random1][random2][1]
+    ans = data[random1][random2][1];
     choicesChange(ans, random1, random2);
 
 }
@@ -58,6 +62,8 @@ function select(choice) {
     }
     if (random9 == choice) {
         cnt++;
+        data[random1][random2][3] = [];
+        data[random1][random2][3] = "correct";
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     } else {
         alert("不正解\n答え：" + ans);
