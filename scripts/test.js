@@ -65,7 +65,7 @@ function select(choice) {
     }
     if (random9 == choice) {
         cnt++;
-        onsole.log(data[random1][random2][0]);
+        onsole.log(data[0][1][0]);
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     } else {
         alert("不正解\n答え：" + ans);
