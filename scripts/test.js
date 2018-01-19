@@ -16,7 +16,7 @@ var text = new Array();
 var data = [];
 for (var i = 0; i < 1000; i++) {
     data[i] = [];
-    for (var j = 0; j < 3; j++) {
+    for (var j = 0; j < 100; j++) {
         data[i][j] = [];
     }
 }
