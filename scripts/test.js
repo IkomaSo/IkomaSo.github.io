@@ -83,6 +83,7 @@ function questionChange(q) {
 }
 
 function choicesChange(ans) {
+    console.log(data[random1][random2][1]);
     while (1) {
         random3 = Math.floor(Math.random() * text.length);
         random4 = Math.floor(Math.random() * 40) + 1;
