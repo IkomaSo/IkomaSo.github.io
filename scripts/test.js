@@ -45,7 +45,7 @@ function Game() {
     questionChange(data[random1][random2][0]);
     console.log(data[random1][random2][1]);
     ans = data[random1][random2][1]
-    choicesChange(ans, r1, r2);
+    choicesChange(ans, random1, random2);
 
 }
 
@@ -75,7 +75,7 @@ function select(choice) {
     questionChange(data[random1][random2][0]);
     console.log(data[random1][random2][1]);
     ans = data[random1][random2][1]
-    choicesChange(ans, r1, r2);
+    choicesChange(ans, random1, random2);
 }
 
 function questionChange(q) {
