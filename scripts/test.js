@@ -14,8 +14,11 @@ var random8;
 
 var text = new Array();
 var data = new Array(1000);
-for (var i = 0; i < 3; i++) {
-    data[i] = new Array(3);
+for (var i = 0; i < 1000; i++) {
+    data[i] = new Array(1000);
+    for (var j = 0; j < 3; j++) {
+        data[i][j] = new Array(3);
+    }
 }
 var done = new Array(1000);
 for (var i = 0; i < 3; i++) {
@@ -62,7 +65,6 @@ function select(choice) {
     }
     if (random9 == choice) {
         cnt++;
-        data[random1][random2][3] = [];
         data[random1][random2][3] = "correct";
         document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
     } else {
