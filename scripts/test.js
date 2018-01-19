@@ -98,7 +98,7 @@ function choicesChange(ans) {
     while (1) {
         random7 = Math.floor(Math.random() * text.length);
         random8 = Math.floor(Math.random() * 40) + 1;
-        if (data[random7][0][1] >= random8 && !(random7 == random1 && random8 == random2) && !(random3 == random7 && random4 == random8) && !(random5 == random7 || random6 == random8)) { break; }
+        if (data[random7][0][1] >= random8 && !(random7 == random1 && random8 == random2) && !(random3 == random7 && random4 == random8) && !(random5 == random7 && random6 == random8)) { break; }
     }
     document.getElementById("c3").innerHTML = data[random7][random8][1];
 
