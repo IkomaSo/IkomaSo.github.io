@@ -131,7 +131,7 @@ var Hello = function(button) {
 }
 
 var StartTest = function(button) {
-    for (var i = 1; i <= 1; ++i) {
+    for (var i = 1; i <= 15; ++i) {
         var obj = document.getElementById(i);
         if (obj.checked) {
             csvToArray("./vocabularys/test" + i + ".csv");
