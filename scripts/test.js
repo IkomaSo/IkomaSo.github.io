@@ -80,7 +80,7 @@ function select(choice) {
         console.log(random1);
         console.log(random2);
         if (data[random1][0][1] >= random2) {
-            if (data[random1][random2][2].length == 0) {
+            if (!(data[random1][random2][2] == "correct" || data[random1][random2][2] == "miss")) {
                 break;
             }
         }
