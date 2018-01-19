@@ -86,10 +86,7 @@ function choicesChange(ans) {
     while (1) {
         random3 = Math.floor(Math.random() * text.length);
         random4 = Math.floor(Math.random() * 40) + 1;
-        if (data[random3][0][1] >= random4 && !(random3 == random1 && random4 == random2)) {
-            console.log(data[random3][0][1] >= random4 && !(random3 == random1 && random4 == random2));
-            break;
-        }
+        if (data[random3][0][1] >= random4 && !(random3 == random1 && random4 == random2)) { break; }
     }
     document.getElementById("c1").innerHTML = data[random3][random4][1];
     while (1) {
