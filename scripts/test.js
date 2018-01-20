@@ -92,7 +92,16 @@ function select(choice) {
 }
 
 function questionChange(q) {
-    document.getElementById("question").innerHTML = q;
+    var qu = document.getElementById("question");
+    document.getElementById("question").innerHTML = '';
+    ityped.init(qu, {
+        strings: [q],
+        typeSpeed: 100,
+        backDelay: 500000000,
+        showCursor: false,
+        loop: false,
+        onFinished: function() {}
+    });
 }
 
 function choicesChange(ans, r1, r2) {
@@ -133,7 +142,7 @@ function choicesChange(ans, r1, r2) {
     }
     ityped.init(c1, {
         strings: [s1],
-        typeSpeed: 80,
+        typeSpeed: 100,
         backDelay: 500000000,
         showCursor: false,
         loop: false,
@@ -141,7 +150,7 @@ function choicesChange(ans, r1, r2) {
     });
     ityped.init(c2, {
         strings: [s2],
-        typeSpeed: 80,
+        typeSpeed: 100,
         backDelay: 500000000,
         showCursor: false,
         loop: false,
@@ -149,7 +158,7 @@ function choicesChange(ans, r1, r2) {
     });
     ityped.init(c3, {
         strings: [s3],
-        typeSpeed: 80,
+        typeSpeed: 100,
         backDelay: 500000000,
         showCursor: false,
         loop: false,
