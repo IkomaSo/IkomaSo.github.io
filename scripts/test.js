@@ -128,7 +128,7 @@ function choicesChange(ans, r1, r2) {
         s3 = data[r1][r2][1];
     }
     ityped.init("c1", {
-        strings: [s1],
+        strings: s1,
         typeSpeed: 80,
         startDelay: 500,
         showCursor: false,
