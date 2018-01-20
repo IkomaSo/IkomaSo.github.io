@@ -186,6 +186,7 @@ var StartTest = function(button) {
 
     if (text.length == 0) {
         alert("テストを選択してください");
+        return 0;
     }
     arrayToData();
 
