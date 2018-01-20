@@ -104,7 +104,7 @@ function choicesChange(ans, r1, r2) {
     }
     var s1 = data[random3][random4][1];
     var c1 = document.getElementById("c1");
-    document.getElementById("c1").innerHTML = data[random3][random4][1];
+    document.getElementById("c1").innerHTML = '';
     while (1) {
         random5 = Math.floor(Math.random() * text.length);
         random6 = Math.floor(Math.random() * 40) + 1;
@@ -112,6 +112,7 @@ function choicesChange(ans, r1, r2) {
     }
     var s2 = data[random5][random6][1];
     var c2 = document.getElementById("c2");
+    document.getElementById("c2").innerHTML = '';
     while (1) {
         random7 = Math.floor(Math.random() * text.length);
         random8 = Math.floor(Math.random() * 40) + 1;
@@ -119,6 +120,7 @@ function choicesChange(ans, r1, r2) {
     }
     var s3 = data[random7][random8][1];
     var c3 = document.getElementById("c3");
+    document.getElementById("c3").innerHTML = '';
     console.log(c3.innerHTML)
 
     random9 = Math.floor(Math.random() * 3) + 1;
@@ -132,7 +134,7 @@ function choicesChange(ans, r1, r2) {
     ityped.init(c1, {
         strings: [s1],
         typeSpeed: 80,
-        backDelay: 5000,
+        backDelay: 500000000,
         showCursor: false,
         loop: false,
         onFinished: function() {}
