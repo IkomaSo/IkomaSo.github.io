@@ -1,4 +1,4 @@
-import { init } from 'iTyped';
+import { init } from 'ityped';
 var cnt = 1;
 var miss = 0;
 var sum = 0;
