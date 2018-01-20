@@ -130,10 +130,11 @@ function choicesChange(ans, r1, r2) {
         s3 = data[r1][r2][1];
     }
     ityped.init(c1, {
-        strings: s1,
+        strings: [s1],
         typeSpeed: 80,
         startDelay: 500,
         showCursor: false,
+        loop: false,
         onFinished: function() {}
     });
     ityped.init(c2, {
@@ -141,6 +142,7 @@ function choicesChange(ans, r1, r2) {
         typeSpeed: 80,
         startDelay: 500,
         showCursor: false,
+        loop: false,
         onFinished: function() {}
     });
     ityped.init(c3, {
@@ -148,6 +150,7 @@ function choicesChange(ans, r1, r2) {
         typeSpeed: 80,
         startDelay: 500,
         showCursor: false,
+        loop: false,
         onFinished: function() {}
     });
 }
