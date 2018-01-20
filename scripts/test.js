@@ -104,6 +104,7 @@ function choicesChange(ans, r1, r2) {
     }
     var s1 = data[random3][random4][1];
     var c1 = document.getElementById("c1");
+    document.getElementById("c1").innerHTML = data[random3][random4][1];
     while (1) {
         random5 = Math.floor(Math.random() * text.length);
         random6 = Math.floor(Math.random() * 40) + 1;
