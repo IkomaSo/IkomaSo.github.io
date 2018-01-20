@@ -278,6 +278,7 @@ a:active {
     text-align: center;
     position: relative;
     padding-bottom: 150px;
+    height: 3vh;
 }
 
 .test {}
