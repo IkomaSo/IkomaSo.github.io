@@ -132,7 +132,7 @@ function choicesChange(ans, r1, r2) {
     ityped.init(c1, {
         strings: [s1],
         typeSpeed: 80,
-        backDelay: 500000000,
+        backDelay: 5000,
         showCursor: false,
         loop: false,
         onFinished: function() {}
