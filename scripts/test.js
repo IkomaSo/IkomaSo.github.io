@@ -205,7 +205,7 @@ var StartTest = function(button) {
     $(".red").show();
     anime({
         targets: 'html, body',
-        scrollTop: $(document).height() - $(window).scrollTop() + $(window).height(),
+        scrollTop: "10000px",
         duration: 2000,
         easing: 'easeInOutQuart'
     });
