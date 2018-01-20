@@ -1,3 +1,4 @@
+import { init } from 'ityped'
 var cnt = 1;
 var miss = 0;
 var sum = 0;
@@ -102,23 +103,52 @@ function choicesChange(ans, r1, r2) {
         random4 = Math.floor(Math.random() * 40) + 1;
         if (data[random3][0][1] >= random4 && !(random3 == r1 && random4 == r2)) { break; }
     }
-    document.getElementById("c1").innerHTML = data[random3][random4][1];
+    var s1 = data[random3][random4][1];
+    var c1 = document.getElementById("c1");
     while (1) {
         random5 = Math.floor(Math.random() * text.length);
         random6 = Math.floor(Math.random() * 40) + 1;
         if (data[random5][0][1] >= random6 && !(random5 == r1 && random6 == r2) && !(random3 == random5 && random4 == random6)) { break; }
     }
-    document.getElementById("c2").innerHTML = data[random5][random6][1];
+    var s2 = data[random5][random6][1];
+    var c2 = document.getElementById("c2");
     while (1) {
         random7 = Math.floor(Math.random() * text.length);
         random8 = Math.floor(Math.random() * 40) + 1;
         if (data[random7][0][1] >= random8 && !(random7 == r1 && random8 == r2) && !(random3 == random7 && random4 == random8) && !(random5 == random7 && random6 == random8)) { break; }
     }
-    document.getElementById("c3").innerHTML = data[random7][random8][1];
+    var s3 = data[random7][random8][1];
+    var c3 = document.getElementById("c3");
 
     random9 = Math.floor(Math.random() * 3) + 1;
-    document.getElementById("c" + random9).innerHTML = ans;
-
+    if (random9 == 1) {
+        s1 = data[r1][r2][1];
+    } else if (random9 == 2) {
+        s2 = data[r1][r2][1];
+    } else {
+        s3 = data[r1][r2][1];
+    }
+    init("c1", {
+        strings: [s1],
+        typeSpeed: 80,
+        startDelay: 500,
+        showCursor: false,
+        onFinished: function() {}
+    });
+    init("c2", {
+        strings: [s2],
+        typeSpeed: 80,
+        startDelay: 500,
+        showCursor: false,
+        onFinished: function() {}
+    });
+    init("c3", {
+        strings: [s3],
+        typeSpeed: 80,
+        startDelay: 500,
+        showCursor: false,
+        onFinished: function() {}
+    });
 }
 
 var Hello = function(button) {
