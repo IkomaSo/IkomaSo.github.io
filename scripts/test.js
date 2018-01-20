@@ -119,6 +119,7 @@ function choicesChange(ans, r1, r2) {
     }
     var s3 = data[random7][random8][1];
     var c3 = document.getElementById("c3");
+    console.log(c3.innerHTML)
 
     random9 = Math.floor(Math.random() * 3) + 1;
     if (random9 == 1) {
