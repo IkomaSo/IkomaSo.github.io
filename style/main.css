@@ -326,7 +326,7 @@ a:active {
     content: '';
     position: absolute;
     left: 5px;
-    top: 12px;
+    top: -12px;
     border: 1px solid #e5e5e5;
     background: #fff;
     width: 50px;
