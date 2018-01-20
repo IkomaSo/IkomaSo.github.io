@@ -1,4 +1,4 @@
-import { init } from 'ityped';
+import { init } from 'ityped'
 var cnt = 1;
 var miss = 0;
 var sum = 0;
@@ -88,7 +88,7 @@ function select(choice) {
     }
     questionChange(data[random1][random2][0]);
     console.log(data[random1][random2][1]);
-    ans = data[random1][random2][1]
+    ans = data[random1][random2][1];
     choicesChange(ans, random1, random2);
 }
 
@@ -177,7 +177,7 @@ var StartTest = function(button) {
     for (var i = 0; i < text.length; ++i) {
         sum += Number(data[i][0][1]);
     }
-    sum = Math.floor(sum * document.getElementById("range").value / 100)
+    sum = Math.floor(sum * document.getElementById("range").value / 100);
 
     document.getElementById("number").innerHTML = cnt + " / " + sum + " 問";
 
