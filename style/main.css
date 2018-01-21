@@ -95,6 +95,7 @@ b span {
 }
 
 .select {
+    position: relative;
     text-align: center;
     height: 100vh;
 }
