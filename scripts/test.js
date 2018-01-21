@@ -202,13 +202,7 @@ var StartTest = function(button) {
 
     Game();
 
-    $(".red").show();
-    anime({
-        targets: 'html, body',
-        scrollTop: $(document).height() - $(window).scrollTop() + $(window).height(),
-        duration: 2000,
-        easing: 'easeInOutQuart'
-    });
+    $("html,body").animate({ scrollTop: $('.red').offset().top });
 
     $(window).on('touchmove.noScroll', function(e) {
         e.preventDefault();
