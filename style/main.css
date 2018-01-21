@@ -100,8 +100,8 @@ b span {
 }
 
 .select {
-    position: absolute;
-    top: 100vh;
+    position: relative;
+    top: -100vh;
     text-align: center;
 }
 
