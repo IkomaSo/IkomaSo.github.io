@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0px;
+    text-align: center;
 }
 
 .cont {
@@ -92,15 +93,17 @@ b span {
     height: 100vh;
     overflow: hidden;
     background: #16a085;
+    text-align: center;
 }
 
 .select {
     position: absolute;
-    top: 0vh;
+    top: 100vh;
     text-align: center;
 }
 
 .hannnari {
+    text-align: center;
     font-family: 'Source Code Pro', monospace;
     font-size: 5vmin;
     font-weight: 900;
