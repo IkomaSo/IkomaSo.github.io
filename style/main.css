@@ -34,7 +34,7 @@ p {
     position: relative;
     top: 150px;
     font-family: "Source Code Pro", 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    font-size: 2vmin;
+    font-size: 2vmax;
 }
 
 b {
@@ -109,7 +109,7 @@ b span {
 .hannnari {
     text-align: center;
     font-family: 'Source Code Pro', monospace;
-    font-size: 5vmin;
+    font-size: 4vmax;
     font-weight: 900;
     position: relative;
     top: 100px;
