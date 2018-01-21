@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+p {
+    text-align: center;
+}
+
 .cont {
     width: 100vw;
     height: 100vh;
