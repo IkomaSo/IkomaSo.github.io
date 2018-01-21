@@ -95,9 +95,8 @@ b span {
 }
 
 .select {
-    position: relative;
+    position: absolute;
     text-align: center;
-    height: 100vh;
 }
 
 .hannnari {
