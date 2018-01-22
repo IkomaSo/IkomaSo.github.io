@@ -643,11 +643,11 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 
 .middle .front-end span:before {
-    content: '\f121';
+    content: 'ABC';
 }
 
 .middle .back-end span:before {
-    content: '\f0f4';
+    content: 'いろは';
 }
 
 .middle p {
