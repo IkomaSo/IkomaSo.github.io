@@ -39,9 +39,9 @@ function arrayToData() {
             data[i][j] = s[j].split(',');
             var jpn = document.getElementById("jpn");
             if (jpn.checked && j != 0) {
-                var a = data[i][j][1];
-                data[i][j][1] = data[i][j][2];
-                data[i][j][2] = a;
+                var a = data[i][j][0];
+                data[i][j][0] = data[i][j][1];
+                data[i][j][1] = a;
             }
         }
     }
