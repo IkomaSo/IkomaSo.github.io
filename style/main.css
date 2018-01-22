@@ -585,6 +585,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 
 .middle input[type="radio"] {
+    margin-top: 5vh;
     display: none;
 }
 
@@ -612,7 +613,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     text-align: center;
     cursor: pointer;
     position: relative;
-    font-family: "Source Code Pro", sans-serif;
+    font-family: "Source Code Pro", 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-weight: 900;
 }
 
@@ -648,10 +649,4 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 .middle .back-end span:before {
     content: 'いろは';
-}
-
-.middle p {
-    color: #fff;
-    font-family: "Source Code Pro", sans-serif;
-    font-weight: 400;
 }
