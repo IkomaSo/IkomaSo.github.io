@@ -644,9 +644,9 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 
 .middle .front-end span:before {
-    content: 'ABC';
+    content: 'A';
 }
 
 .middle .back-end span:before {
-    content: 'いろは';
+    content: 'あ';
 }
