@@ -655,9 +655,3 @@ input[type="range"]::-webkit-slider-thumb:active {
     font-family: "Source Code Pro", sans-serif;
     font-weight: 400;
 }
-
-.middle p span:after {
-    content: '\f0e7';
-    font-family: FontAwesome;
-    color: yellow;
-}
