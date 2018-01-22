@@ -133,6 +133,7 @@ a:active {
 }
 
 .push1 {
+    font-family: "Source Code Pro", 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     display: block;
     margin: 0 10px;
     padding: 15px 0;
