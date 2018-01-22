@@ -16,7 +16,7 @@ p {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto 100%;
     text-align: center;
 }
 
