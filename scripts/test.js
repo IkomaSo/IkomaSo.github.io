@@ -37,6 +37,12 @@ function arrayToData() {
         var s = text[i].split("\n");
         for (var j = 0; j < s.length; ++j) {
             data[i][j] = s[j].split(',');
+            var jpn = document.getElementById(jpn);
+            if (jpn.checked) {
+                var a = data[i][j][1];
+                data[i][j][1] = data[i][j][2];
+                data[i][j][2] = a;
+            }
         }
     }
 }
