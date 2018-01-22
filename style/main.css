@@ -24,7 +24,7 @@ p {
     z-index: 30;
     font-family: "Source Code Pro", monospace;
     font-weight: 300;
-    font-size: 7vmin;
+    font-size: 5vmax;
     color: #ffffff;
     position: relative;
     top: 45vh;
